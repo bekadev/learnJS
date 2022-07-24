@@ -24,5 +24,14 @@ const user = {
 
 const copyUser = {...user}
 copyUser.age = 22
+// console.log(user.age)
+// console.log(copyUser.age)
+
+const fn = (p) => {
+    const update = Object.assign({}, p)
+    update.age += 1
+    return update
+}
+const update = fn(user)
 console.log(user.age)
-console.log(copyUser.age)
+console.log(update.age)
