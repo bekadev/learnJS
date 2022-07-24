@@ -14,3 +14,15 @@ const objectA = {
 const copy = objectA
 
 copy.a = 20
+
+const user = {
+    age: 21,
+    name: 'bekzat',
+    userName: 'bekadev',
+    password: 21431
+}
+
+const copyUser = {...user}
+copyUser.age = 22
+console.log(user.age)
+console.log(copyUser.age)
