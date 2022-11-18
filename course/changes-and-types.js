@@ -35,3 +35,15 @@ const fn = (p) => {
 const update = fn(user)
 console.log(user.age)
 console.log(update.age)
+
+const newPost = (post, ad = Date()) => ({
+    ...post,
+    ad
+})
+
+const firstPost = {
+    id: 1,
+    ou: 'BB'
+}
+
+console.log(newPost(firstPost))
